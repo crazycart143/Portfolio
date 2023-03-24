@@ -9,11 +9,11 @@ export default function Navbar() {
       variants={navVariants}
       initial="hidden"
       whileInView="show"
-      className="py-4 px-16 grid grid-cols-3"
+      className="py-6 px-16 grid grid-cols-3 fixed top-0 "
     >
-      <div>
+      <div className="border-4 border-[#F2F2F4] rounded-xl w-10 px-6 flex justify-center items-center">
         <h1 className="text-[30px] font-bold text-[#F2F2F4] tracking-tighter">
-          Keanu
+          Ke
         </h1>
       </div>
       <div className="flex justify-center items-center gap-x-20 text-lg text-[#F2F2F4]">
