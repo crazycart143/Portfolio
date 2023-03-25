@@ -1,20 +1,44 @@
 "use client";
 
 import { Canvas } from "@react-three/fiber";
-import GLTFLoader from "@/utils/gltfLoader";
 import { OrbitControls } from "@react-three/drei";
 import { motion } from "framer-motion";
 import { fadeIn } from "@/utils/motion";
+import { useGLTF } from "@react-three/drei";
+import { useState } from "react";
+import { useFrame, useThree } from "@react-three/fiber";
+
+function GLTFLoader(props) {
+  const { url, scale } = props;
+  const gltf = useGLTF(url, true);
+  const [rotation, setRotation] = useState(0);
+  const { viewport } = useThree();
+
+  useFrame(() => {
+    setRotation((rotation) => rotation + 0.01);
+  });
+
+  gltf.scene.scale.set(scale, scale, scale);
+  gltf.scene.rotation.y = rotation;
+  gltf.scene.position.x = -viewport.width / -6;
+  gltf.scene.position.y = -viewport.height / 12;
+
+  return (
+    <>
+      <primitive object={gltf.scene} dispose={null} />
+    </>
+  );
+}
 
 export default function Hero() {
   return (
     <>
-      <div className="flex flex-col h-full top-[140px] justify-start items-start text-[#F2F2F4] p-[150px] absolute">
+      <div className="flex flex-col h-full top-[140px] justify-start items-start z-10 text-[#F2F2F4] p-[150px] absolute">
         <motion.p
           variants={fadeIn("right", "tween", 0.5, 1)}
           initial="hidden"
           whileInView="show"
-          viewport={{ once: "false", amount: 0.25 }}
+          viewport={{ once: "true", amount: 0.25 }}
         >
           Hello there,
         </motion.p>
@@ -23,7 +47,7 @@ export default function Hero() {
           initial="hidden"
           whileInView="show"
           className="text-[60px]"
-          viewport={{ once: "false", amount: 0.25 }}
+          viewport={{ once: "true", amount: 0.25 }}
         >
           I'm Keanu John
         </motion.h1>
@@ -31,7 +55,7 @@ export default function Hero() {
           variants={fadeIn("right", "tween", 1.5, 1)}
           initial="hidden"
           whileInView="show"
-          viewport={{ once: "false", amount: 0.25 }}
+          viewport={{ once: "true", amount: 0.25 }}
         >
           a <span className="font-bold">front-end web developer</span>
         </motion.p>
@@ -39,7 +63,7 @@ export default function Hero() {
           variants={fadeIn("right", "tween", 2, 1)}
           initial="hidden"
           whileInView="show"
-          viewport={{ once: "false", amount: 0.25 }}
+          viewport={{ once: "true", amount: 0.25 }}
           className="cursor-pointer rounded-xl mt-[30px] py-3 px-4 font-semibold bg-[#F2F2F4] text-black"
         >
           View my projects
@@ -88,7 +112,13 @@ export default function Hero() {
         whileInView="show"
         viewport={{ once: "false", amount: 0.25 }}
       >
-        <motion.div className="rounded-full w-[20px] h-[20px] bg-white"></motion.div>
+        <motion.div
+          initial={{ top: 0, opacity: 1 }}
+          whileInView={{ top: 90, opacity: 0 }}
+          viewport={{ once: "true", amount: 0.25 }}
+          transition={{ duration: 2, repeat: Infinity }}
+          className="rounded-full w-[20px] h-[20px] bg-white absolute "
+        ></motion.div>
       </motion.div>
     </>
   );
