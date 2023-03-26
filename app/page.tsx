@@ -9,10 +9,12 @@ const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
   return (
     <main>
-      <section className="flex relative w-full h-[820px]">
+      <section className="flex relative w-full h-[800px]">
         <Hero />
       </section>
-      <section className="w-full h-[100vh] bg-[#f2f2f4]">
+      <section className="w-full h-[800px] bg-[#F2F2F4]"></section>
+      <section className="bg-black w-full h-[800px]"></section>
+      <section className="w-full h-[800px] bg-techstack bg-cover bg-center bg-no-repeat">
         <TechStack />
       </section>
     </main>

@@ -53,6 +53,9 @@ module.exports = {
         nav1: "repeat(1, minmax(0, 0.5fr) 1fr)",
         login1: "repeat(1, minmax(0, 1fr) 0.5fr)",
       },
+      backgroundImage: {
+        techstack: "url('/teckstack_bg.png')",
+      },
     },
   },
   plugins: [],
