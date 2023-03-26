@@ -25,6 +25,7 @@ body {
 
 Canvas {
   display: block;
-  width: 100%;
+  max-width: 100%;
+  width: 1500px;
   z-index: 1;
 }

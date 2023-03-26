@@ -6,21 +6,25 @@ import { useState } from "react";
 import { useFrame, useThree } from "@react-three/fiber";
 
 function GLTFLoader(props) {
-  const { url, scale } = props;
+  const { url, scale, position, rotation } = props;
   const gltf = useGLTF(url, true);
-  const [rotation, setRotation] = useState(0);
   const { viewport } = useThree();
 
-  useFrame(() => {
-    setRotation((rotation) => rotation + 0.01);
-  });
+  // gltf.scene.scale.set(scale, scale, scale);
+  // gltf.scene.rotation.x = 2;
+  // gltf.scene.rotation.y = 13;
+  // gltf.scene.rotation.z = 0;
+  // gltf.scene.position.x = -viewport.width / 5;
+  // gltf.scene.position.y = -viewport.height / 12;
 
   gltf.scene.scale.set(scale, scale, scale);
-  gltf.scene.rotation.x = 2;
-  gltf.scene.rotation.y = 13;
-  gltf.scene.rotation.z = 0;
-  gltf.scene.position.x = -viewport.width / 5;
-  gltf.scene.position.y = -viewport.height / 12;
+  gltf.scene.rotation.x = rotation.x;
+  gltf.scene.rotation.y = rotation.y;
+  gltf.scene.rotation.z = rotation.z;
+  gltf.scene.position.x = position.x - viewport.width / 2;
+  gltf.scene.position.y = position.y;
+  -viewport.height / 2;
+  gltf.scene.position.z = position.z;
 
   return (
     <>
@@ -54,10 +58,21 @@ export default function TechStack() {
         />
 
         {/* <pointLight position={[20, 0, 3]} intensity={3} /> */}
-        <GLTFLoader url="tailwind-keycaps.gltf" scale={20} />
         {/* <ambientLight intensity={0.1} /> */}
         {/* <directionalLight color="white" position={[0, 0, 5]} /> */}
         {/* <pointLight position={[10, 10, 10]} /> */}
+        <GLTFLoader
+          url="tailwind-keycaps.gltf"
+          scale={20}
+          position={{ x: 4, y: 0, z: 0 }}
+          rotation={{ x: 2, y: -13, z: 0 }}
+        />
+        <GLTFLoader
+          url="tailwind-keycaps2.gltf"
+          scale={20}
+          position={{ x: 10, y: 0, z: 0 }}
+          rotation={{ x: 2, y: -13, z: 0 }}
+        />
       </Canvas>
     </div>
   );

@@ -33,7 +33,7 @@ function GLTFLoader(props) {
 export default function Hero() {
   return (
     <>
-      <div className="flex flex-col h-full top-[140px] justify-start items-start z-10 text-[#F2F2F4] p-[150px] absolute">
+      <div className="flex flex-col h-full top-[140px] absolute justify-start items-start z-10 text-[#F2F2F4] p-[150px]">
         <motion.p
           variants={fadeIn("right", "tween", 0.5, 1)}
           initial="hidden"
@@ -69,33 +69,40 @@ export default function Hero() {
           View my projects
         </motion.button>
       </div>
-      <Canvas>
-        <OrbitControls
-          enablePan={false}
-          enableZoom={false}
-          enableRotate={false}
-          enableDamping={false}
-          // maxAzimuthAngle={Math.PI / 30}
-          // maxPolarAngle={Math.PI}
-          // minAzimuthAngle={-Math.PI / 4}
-          // minPolarAngle={0}
-        />
-        <ambientLight />
-        <spotLight
-          castShadow
-          intensity={10}
-          angle={Math.PI / 10}
-          position={[4, 10, 3]}
-          shadow-mapSize-width={2048}
-          shadow-mapSize-height={2048}
-        />
+      <motion.div
+        variants={fadeIn("left", "tween", 2, 1)}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: "true", amount: 0.25 }}
+      >
+        <Canvas>
+          <OrbitControls
+            enablePan={false}
+            enableZoom={false}
+            enableRotate={false}
+            enableDamping={false}
+            // maxAzimuthAngle={Math.PI / 30}
+            // maxPolarAngle={Math.PI}
+            // minAzimuthAngle={-Math.PI / 4}
+            // minPolarAngle={0}
+          />
+          <ambientLight />
+          <spotLight
+            castShadow
+            intensity={10}
+            angle={Math.PI / 10}
+            position={[4, 10, 3]}
+            shadow-mapSize-width={2048}
+            shadow-mapSize-height={2048}
+          />
 
-        {/* <pointLight position={[20, 0, 3]} intensity={3} /> */}
-        <GLTFLoader url="Sketchfab_Scene.gltf" scale={0.15} />
-        {/* <ambientLight intensity={0.1} /> */}
-        {/* <directionalLight color="white" position={[0, 0, 5]} /> */}
-        {/* <pointLight position={[10, 10, 10]} /> */}
-      </Canvas>
+          {/* <pointLight position={[20, 0, 3]} intensity={3} /> */}
+          <GLTFLoader url="Sketchfab_Scene.gltf" scale={0.15} />
+          {/* <ambientLight intensity={0.1} /> */}
+          {/* <directionalLight color="white" position={[0, 0, 5]} /> */}
+          {/* <pointLight position={[10, 10, 10]} /> */}
+        </Canvas>
+      </motion.div>
       <motion.h1
         variants={fadeIn("down", "tween", 2, 1)}
         initial="hidden"
