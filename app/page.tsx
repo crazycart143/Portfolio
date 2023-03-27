@@ -1,22 +1,43 @@
 "use client";
 
 import { Inter } from "next/font/google";
+import { useEffect, useState } from "react";
+import AboutMe from "./components/AboutMe";
 import Hero from "./components/Hero";
 import TechStack from "./components/TechStack";
-
+import { motion } from "framer-motion";
+import Loading from "./components/Loading";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    // Simulate loading time
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 4000);
+  }, []);
   return (
     <main>
-      <section className="flex relative w-full h-[800px]">
-        <Hero />
-      </section>
-      <section className="w-full h-[800px] bg-[#F2F2F4]"></section>
-      <section className="bg-black w-full h-[800px]"></section>
-      <section className="w-full h-[800px] bg-techstack bg-cover bg-center bg-no-repeat">
-        <TechStack />
-      </section>
+      {isLoading ? (
+        <div className="flex items-center justify-center w-full h-screen text-white bg-cover bg-no-repeat bg-center">
+          <Loading />
+        </div>
+      ) : (
+        <>
+          <section className="flex relative w-full h-[800px]">
+            <Hero />
+          </section>
+          <section className="w-full h-[800px] bg-[#F2F2F4]">
+            <AboutMe />
+          </section>
+          <section className="bg-black w-full h-[800px]"></section>
+          <section className="w-full h-[800px] bg-techstack bg-cover bg-center bg-no-repeat">
+            <TechStack />
+          </section>
+        </>
+      )}
     </main>
   );
 }

@@ -55,6 +55,7 @@ module.exports = {
       },
       backgroundImage: {
         techstack: "url('/teckstack_bg.png')",
+        loading: "url('/eveneer-animated-dribbble.gif')",
       },
     },
   },

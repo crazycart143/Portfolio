@@ -13,6 +13,7 @@ function GLTFLoader(props) {
   const gltf = useGLTF(url, true);
   const [rotation, setRotation] = useState(0);
   const { viewport } = useThree();
+  const isLoaded = gltf !== undefined;
 
   useFrame(() => {
     setRotation((rotation) => rotation + 0.01);
@@ -97,7 +98,7 @@ export default function Hero() {
           />
 
           {/* <pointLight position={[20, 0, 3]} intensity={3} /> */}
-          <GLTFLoader url="Sketchfab_Scene.gltf" scale={0.15} />
+          <GLTFLoader url="gaming_rig.gltf" scale={0.15} />
           {/* <ambientLight intensity={0.1} /> */}
           {/* <directionalLight color="white" position={[0, 0, 5]} /> */}
           {/* <pointLight position={[10, 10, 10]} /> */}
