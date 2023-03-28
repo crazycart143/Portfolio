@@ -16,7 +16,7 @@ export default function AboutMe() {
         </h1>
         <div className="flex flex-col gap-y-5">
           <motion.h1
-            variants={fadeIn("right", "tween", 1, 1)}
+            variants={fadeIn("right", "tween", 1, 2)}
             initial="hidden"
             whileInView="show"
             className="text-[30px]"
@@ -24,7 +24,7 @@ export default function AboutMe() {
             ASPIRING WEB DEVELOPER
           </motion.h1>
           <motion.p
-            variants={fadeIn("right", "tween", 1.25, 1.25)}
+            variants={fadeIn("right", "tween", 1.25, 2)}
             initial="hidden"
             whileInView="show"
           >
@@ -35,7 +35,7 @@ export default function AboutMe() {
             <span className="font-bold">continuous learning.</span>
           </motion.p>
           <motion.p
-            variants={fadeIn("right", "tween", 1.5, 1.5)}
+            variants={fadeIn("right", "tween", 1.25, 2)}
             initial="hidden"
             whileInView="show"
           >
@@ -47,7 +47,7 @@ export default function AboutMe() {
           </motion.p>
           <div className="flex gap-x-5 justify-start items-center">
             <motion.button
-              variants={fadeIn("right", "tween", 1.75, 1.75)}
+              variants={fadeIn("right", "tween", 1.25, 2)}
               initial="hidden"
               whileInView="show"
               className="w-[30%] border-2 border-black py-2 font-bold hover:text-[#f2f2f4] hover:bg-black hover:border-white"
@@ -55,17 +55,24 @@ export default function AboutMe() {
               DOWNLOAD CV
             </motion.button>
             <motion.div variants={zoomIn(2, 2)} className="flex gap-x-2">
-              <img src="/fb-icon.svg" alt="fb-icon" className="w-[40px]" />
-              <img
-                src="/github-icon.svg"
-                alt="github-icon"
-                className="w-[38px]"
-              />
-              <img
-                src="/tiktok-icon.svg"
-                alt="tiktok-icon"
-                className="w-[38px]"
-              />
+              <a href="">
+                <img src="/fb-icon.svg" alt="fb-icon" className="w-[40px]" />
+              </a>
+
+              <a href="">
+                <img
+                  src="/github-icon.svg"
+                  alt="github-icon"
+                  className="w-[38px]"
+                />
+              </a>
+              <a href="">
+                <img
+                  src="/tiktok-icon.svg"
+                  alt="tiktok-icon"
+                  className="w-[38px]"
+                />
+              </a>
             </motion.div>
           </div>
         </div>

@@ -2,20 +2,8 @@
 
 import { navVariants } from "@/utils/motion";
 import { motion } from "framer-motion";
-import { useEffect, useState } from "react";
 
 export default function Navbar() {
-  const [viewport, setViewport] = useState(0);
-
-  useEffect(() => {
-    // Simulate loading time
-    setTimeout(() => {
-      setViewport(window.pageYOffset);
-    }, 1000);
-  }, [viewport]);
-
-  console.log(viewport);
-
   return (
     <motion.nav
       variants={navVariants}

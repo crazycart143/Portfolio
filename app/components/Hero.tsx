@@ -119,9 +119,12 @@ export default function Hero() {
       >
         <motion.div
           initial={{ top: 0, opacity: 1 }}
-          whileInView={{ top: 90, opacity: 0 }}
+          whileInView={{ top: 90, opacity: 1 }}
           viewport={{ once: "true", amount: 0.25 }}
           transition={{ duration: 2, repeat: Infinity }}
+          animate={{
+            backgroundColor: ["hsl(0, 0, 100)", "hsl(255, 0, 0)"],
+          }}
           className="rounded-full w-[20px] h-[20px] bg-white absolute "
         ></motion.div>
       </motion.div>

@@ -6,6 +6,7 @@ import AboutMe from "./components/AboutMe";
 import Hero from "./components/Hero";
 import TechStack from "./components/TechStack";
 import Loading from "./components/Loading";
+import { AnimatePresence } from "framer-motion";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
