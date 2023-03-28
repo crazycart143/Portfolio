@@ -1,19 +1,16 @@
 "use client";
 
-import { Canvas } from "@react-three/fiber";
-import { OrbitControls } from "@react-three/drei";
+import { useGLTF, OrbitControls } from "@react-three/drei";
 import { motion } from "framer-motion";
 import { fadeIn } from "@/utils/motion";
-import { useGLTF } from "@react-three/drei";
 import { useState } from "react";
-import { useFrame, useThree } from "@react-three/fiber";
+import { Canvas, useFrame, useThree } from "@react-three/fiber";
 
 function GLTFLoader(props) {
   const { url, scale } = props;
   const gltf = useGLTF(url, true);
   const [rotation, setRotation] = useState(0);
   const { viewport } = useThree();
-  const isLoaded = gltf !== undefined;
 
   useFrame(() => {
     setRotation((rotation) => rotation + 0.01);

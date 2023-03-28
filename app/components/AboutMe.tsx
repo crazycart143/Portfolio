@@ -1,6 +1,5 @@
-import React from "react";
 import { motion } from "framer-motion";
-import { fadeIn, staggerContainer, TypingText } from "@/utils/motion";
+import { fadeIn, zoomIn, staggerContainer, TypingText } from "@/utils/motion";
 
 export default function AboutMe() {
   return (
@@ -25,7 +24,7 @@ export default function AboutMe() {
             ASPIRING WEB DEVELOPER
           </motion.h1>
           <motion.p
-            variants={fadeIn("right", "tween", 1.25, 1)}
+            variants={fadeIn("right", "tween", 1.25, 1.25)}
             initial="hidden"
             whileInView="show"
           >
@@ -36,7 +35,7 @@ export default function AboutMe() {
             <span className="font-bold">continuous learning.</span>
           </motion.p>
           <motion.p
-            variants={fadeIn("right", "tween", 1.5, 1)}
+            variants={fadeIn("right", "tween", 1.5, 1.5)}
             initial="hidden"
             whileInView="show"
           >
@@ -48,14 +47,14 @@ export default function AboutMe() {
           </motion.p>
           <div className="flex gap-x-5 justify-start items-center">
             <motion.button
-              variants={fadeIn("right", "tween", 1.75, 1)}
+              variants={fadeIn("right", "tween", 1.75, 1.75)}
               initial="hidden"
               whileInView="show"
               className="w-[30%] border-2 border-black py-2 font-bold hover:text-[#f2f2f4] hover:bg-black hover:border-white"
             >
               DOWNLOAD CV
             </motion.button>
-            <div className="flex gap-x-2">
+            <motion.div variants={zoomIn(2, 2)} className="flex gap-x-2">
               <img src="/fb-icon.svg" alt="fb-icon" className="w-[40px]" />
               <img
                 src="/github-icon.svg"
@@ -67,7 +66,7 @@ export default function AboutMe() {
                 alt="tiktok-icon"
                 className="w-[38px]"
               />
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>
