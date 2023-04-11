@@ -7,6 +7,7 @@ import Hero from "./components/Hero";
 import TechStack from "./components/TechStack";
 import Loading from "./components/Loading";
 import { AnimatePresence } from "framer-motion";
+import Services from "./components/Services";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
@@ -27,13 +28,15 @@ export default function Home() {
         </div>
       ) : (
         <>
-          <section id="hero" className="flex relative w-full h-[800px]">
+          <section id="hero" className="flex relative w-full h-[700px]">
             <Hero />
           </section>
           <section id="aboutMe" className="w-full h-[800px] bg-[#F2F2F4]">
             <AboutMe />
           </section>
-          <section className="bg-black w-full h-[800px]"></section>
+          <section className="bg-black w-full h-[800px]">
+            <Services />
+          </section>
           <section className="w-full h-[800px] bg-techstack bg-cover bg-center bg-no-repeat">
             <TechStack />
           </section>

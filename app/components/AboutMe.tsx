@@ -7,6 +7,7 @@ export default function AboutMe() {
       variants={staggerContainer}
       initial="hidden"
       whileInView="show"
+      viewport={{ once: "true", amount: 0.25 }}
       className="flex pt-48 px-28"
     >
       <img src="/about_me.png" alt="about me image" />
@@ -19,6 +20,7 @@ export default function AboutMe() {
             variants={fadeIn("right", "tween", 1, 2)}
             initial="hidden"
             whileInView="show"
+            viewport={{ once: "true", amount: 0.25 }}
             className="text-[30px]"
           >
             ASPIRING WEB DEVELOPER
@@ -27,6 +29,7 @@ export default function AboutMe() {
             variants={fadeIn("right", "tween", 1.25, 2)}
             initial="hidden"
             whileInView="show"
+            viewport={{ once: "true", amount: 0.25 }}
           >
             I am <span className="font-bold">Keanu John Lariosa</span>, 2nd year
             BSIT student with a{" "}
@@ -38,6 +41,7 @@ export default function AboutMe() {
             variants={fadeIn("right", "tween", 1.25, 2)}
             initial="hidden"
             whileInView="show"
+            viewport={{ once: "true", amount: 0.25 }}
           >
             As a student, I am constantly seeking out opportunities to expand my
             knowledge and hone my skills in web development. My commitment to
@@ -50,6 +54,7 @@ export default function AboutMe() {
               variants={fadeIn("right", "tween", 1.25, 2)}
               initial="hidden"
               whileInView="show"
+              viewport={{ once: "true", amount: 0.25 }}
               className="w-[30%] border-2 border-black py-2 font-bold hover:text-[#f2f2f4] hover:bg-black hover:border-white"
             >
               DOWNLOAD CV

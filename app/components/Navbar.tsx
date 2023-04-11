@@ -9,7 +9,8 @@ export default function Navbar() {
       variants={navVariants}
       initial="hidden"
       whileInView="show"
-      className="fixed top-0 z-10 grid grid-cols-3 px-16 py-6"
+      viewport={{ once: "true", amount: 0.25 }}
+      className="z-10 grid grid-cols-3 px-16 py-6"
     >
       <div className="border-4 border-[#F2F2F4] rounded-xl w-10 px-6 flex justify-center items-center">
         <h1 className="text-[30px] font-bold text-[#F2F2F4] tracking-tighter">

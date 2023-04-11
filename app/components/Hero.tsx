@@ -19,7 +19,7 @@ function GLTFLoader(props) {
   gltf.scene.scale.set(scale, scale, scale);
   gltf.scene.rotation.y = rotation;
   gltf.scene.position.x = -viewport.width / -6;
-  gltf.scene.position.y = -viewport.height / 12;
+  gltf.scene.position.y = -viewport.height / 19;
 
   return (
     <>
@@ -31,7 +31,7 @@ function GLTFLoader(props) {
 export default function Hero() {
   return (
     <>
-      <div className="flex flex-col h-full top-[140px] absolute justify-start items-start z-10 text-[#F2F2F4] p-[150px]">
+      <div className="flex flex-col h-full top-[140px] absolute justify-start items-start z-10 text-[#F2F2F4] px-[150px] py-[50px]">
         <motion.p
           variants={fadeIn("right", "tween", 0.5, 1)}
           initial="hidden"
