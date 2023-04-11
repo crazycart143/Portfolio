@@ -23,7 +23,7 @@ export default function Home() {
   return (
     <main>
       {isLoading ? (
-        <div className="flex items-center justify-center w-full h-screen text-white bg-cover bg-no-repeat bg-center">
+        <div className="flex items-center justify-center w-full h-full text-white bg-cover bg-no-repeat bg-center">
           <Loading />
         </div>
       ) : (
