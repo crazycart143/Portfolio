@@ -2,12 +2,12 @@ import React from "react";
 
 export default function Services() {
   return (
-    <section className="text-white flex flex-col justify-center items-center px-[150px]">
-      <h1 className="mt-[50px] text-[30px] font-bold tracking-wider">
+    <section className="text-white flex flex-col justify-center items-center px-[100px]">
+      <h1 className="mt-[50px] text-[40px] font-bold tracking-wider">
         What I do?
       </h1>
-      <div className="flex flex-col flex-wrap h-full w-full justify-center items-start gap-y-28 mt-[50px] ">
-        <div className="flex gap-x-28">
+      <div className="flex flex-col flex-wrap h-full w-full justify-center items-center gap-y-28 mt-[50px] ">
+        <div className="grid grid-cols-2 gap-x-28">
           <div className="flex flex-col justify-center items-center text-center w-[400px]">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -33,8 +33,9 @@ export default function Services() {
           </div>
           <div>asd</div>
         </div>
-        <div className="flex gap-x-28">
-          <div className="flex flex-col justify-center items-center text-center w-[400px]">
+        <div className="grid grid-cols-2 gap-x-28">
+          <div>asd</div>
+          <div className="flex flex-col justify-end items-center text-center w-[400px]">
             <img
               src="/backend-icon.png"
               alt="web-development logo"
@@ -47,9 +48,8 @@ export default function Services() {
               authentication using JWT.
             </p>
           </div>
-          <div>asd</div>
         </div>
-        <div className="flex gap-x-28">
+        <div className="grid grid-cols-2 gap-x-28">
           <div className="flex flex-col justify-center items-center text-center w-[400px]">
             <svg
               xmlns="http://www.w3.org/2000/svg"
