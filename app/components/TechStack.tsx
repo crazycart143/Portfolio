@@ -34,5 +34,5 @@
 // }
 
 export default function TechStack() {
-  return <div></div>;
+  return <div className=""></div>;
 }

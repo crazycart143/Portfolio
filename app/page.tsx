@@ -34,10 +34,11 @@ export default function Home() {
           <section id="aboutMe" className="w-full h-[800px] bg-[#F2F2F4]">
             <AboutMe />
           </section>
-          <section className="bg-black w-full h-[800px]">
+          <section className="bg-black w-full h-[1000px]">
             <Services />
           </section>
-          <section className="w-full h-[800px] bg-techstack bg-cover bg-center bg-no-repeat">
+          <section className="w-full h-[800px] bg-techstack bg-cover bg-center bg-no-repeat"></section>
+          <section className="w-full h-[800px] bg-[#F2F2F4]">
             <TechStack />
           </section>
         </>
