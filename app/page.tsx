@@ -8,6 +8,7 @@ import TechStack from "./components/TechStack";
 import Loading from "./components/Loading";
 import { AnimatePresence } from "framer-motion";
 import Services from "./components/Services";
+import Projects from "./components/Projects";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
@@ -23,7 +24,7 @@ export default function Home() {
   return (
     <main>
       {isLoading ? (
-        <div className="flex items-center justify-center w-full h-full text-white bg-cover bg-no-repeat bg-center">
+        <div className="flex items-center justify-center w-full h-full text-white bg-center bg-no-repeat bg-cover">
           <Loading />
         </div>
       ) : (
@@ -38,8 +39,11 @@ export default function Home() {
             <Services />
           </section>
           <section className="w-full h-[800px] bg-techstack bg-cover bg-center bg-no-repeat"></section>
-          <section className="w-full h-[800px] bg-[#F2F2F4]">
+          <section className="w-full h-[800px] bg-[#F2F2F4] relative">
             <TechStack />
+          </section>
+          <section className="w-full h-[800px] bg-black relative">
+            <Projects />
           </section>
         </>
       )}
