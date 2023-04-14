@@ -9,6 +9,7 @@ import Loading from "./components/Loading";
 import { AnimatePresence } from "framer-motion";
 import Services from "./components/Services";
 import Projects from "./components/Projects";
+import Contact from "./components/Contact";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
@@ -42,8 +43,11 @@ export default function Home() {
           <section className="w-full h-[800px] bg-[#F2F2F4] relative">
             <TechStack />
           </section>
-          <section className="w-full h-[1000px] bg-black relative">
+          <section className="w-full h-[940px] bg-black ">
             <Projects />
+          </section>
+          <section className="w-full h-[800px] bg-[#F2F2F4]">
+            <Contact />
           </section>
         </>
       )}
