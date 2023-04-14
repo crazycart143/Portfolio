@@ -3,8 +3,10 @@
 import { footerVariants } from "@/utils/motion";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { useState } from "react";
 
 export default function Footer() {
+  const [isHovered, setIsHovered] = useState(false);
   return (
     <motion.div
       variants={footerVariants}
@@ -28,12 +30,27 @@ export default function Footer() {
         nang walang pahintulot galing sa kaniya.
       </h1>
       <Link href="https://github.com/crazycart143" passHref>
-        <button className="px-2 py-2 border-2 border-white rounded-full h-[70px] mt-[30px] bg-white">
+        <button
+          onMouseEnter={() => setIsHovered(true)}
+          onMouseLeave={() => setIsHovered(false)}
+          className="px-2 py-2 border-2 border-white rounded-full h-[70px] mt-[30px] bg-white relative"
+        >
           <img
             src="/github-animation.gif"
             alt="github icon animated"
             className="w-12 cursor-pointer"
           />
+
+          {isHovered && (
+            <motion.div
+              className="px-2 py-2 border-2  rounded-full h-[70px] bg-black absolute -top-[2px] -left-[1.5px] flex justify-center items-center"
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: 50 }}
+            >
+              <p>Github</p>
+            </motion.div>
+          )}
         </button>
       </Link>
     </motion.div>
