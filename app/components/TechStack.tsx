@@ -52,7 +52,7 @@ export default function TechStack() {
     <div className="w-full h-full">
       <div className="absolute flex flex-col items-center justify-center text-center left-[38%] top-[6%]">
         <h1 className="font-bold text-[40px]">My Tech Stacks</h1>
-        <p className="font-light">
+        <p className="font-light text-[20px]">
           Technology stacks that I am currently working on.
         </p>
       </div>
@@ -91,7 +91,7 @@ export default function TechStack() {
           <img src="/html.png" alt="html" className="w-[54px]" />
           <img src="/css.png" alt="css" className="w-[54px]" />
           <img src="/js.png" alt="js" className="w-[54px]" />
-          <img src="/react.png" alt="react" className="w-[58px]" />
+          <img src="/react.png" alt="react" className="w-[68px]" />
           <img src="/nextjs.png" alt="nextjs" className="w-[54px]" />
           <img src="/mongodb.png" alt="mongodb" className="w-[54px]" />
           <img src="/firebase.png" alt="firebase" className="w-[46px]" />

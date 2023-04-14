@@ -2,6 +2,7 @@
 
 import { footerVariants } from "@/utils/motion";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -10,7 +11,7 @@ export default function Footer() {
       initial="hidden"
       whileInView="show"
       viewport={{ once: "true", amount: 0.25 }}
-      className="h-[500px] bg-black flex flex-col gap-y-6 justify-start items-center py-[100px] text-white"
+      className="h-[500px] bg-black flex flex-col gap-y-6 justify-start items-center pt-[100px] text-white"
     >
       <div className="flex items-center justify-center">
         <img src="/icon.png" alt="website icon" className="w-14" />
@@ -26,9 +27,15 @@ export default function Footer() {
         maaari at hindi dapat kopyahin sa anumang banhay o sa anumang paraan
         nang walang pahintulot galing sa kaniya.
       </h1>
-      <button className="bg-black border-4 border-[#F2F2F4] rounded-xl w-10 px-6 ">
-        <img src="/github.png" alt="github icon" className="w-10" />
-      </button>
+      <Link href="https://github.com/crazycart143" passHref>
+        <button className="px-2 py-2 border-2 border-white rounded-full h-[70px] mt-[30px] bg-white">
+          <img
+            src="/github-animation.gif"
+            alt="github icon animated"
+            className="w-12 cursor-pointer"
+          />
+        </button>
+      </Link>
     </motion.div>
   );
 }

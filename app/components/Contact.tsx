@@ -1,7 +1,7 @@
 export default function Contact() {
   return (
     <div className="flex gap-x-10 py-[150px] px-[200px] justify-center items-center">
-      <div className="flex flex-col gap-y-4 w-[500px]">
+      <div className="flex flex-col gap-y-6 w-[500px]">
         <h1 className="font-bold text-[40px]">Let's work together.</h1>
         <p className="text-[22px]">
           Contact me if you think that I am qualified for your project or
