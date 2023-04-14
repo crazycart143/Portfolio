@@ -88,9 +88,9 @@ export default function TechStack() {
       </Canvas>
       <div className="absolute bottom-[10%] left-[22%] flex flex-col w-[500px]">
         <div className="flex gap-x-8">
-          <img src="/html.png" alt="html" className="w-[46px]" />
-          <img src="/css.png" alt="css" className="w-[46px]" />
-          <img src="/js.png" alt="js" className="w-[46px]" />
+          <img src="/html.png" alt="html" className="w-[54px]" />
+          <img src="/css.png" alt="css" className="w-[54px]" />
+          <img src="/js.png" alt="js" className="w-[54px]" />
           <img src="/react.png" alt="react" className="w-[58px]" />
           <img src="/nextjs.png" alt="nextjs" className="w-[54px]" />
           <img src="/mongodb.png" alt="mongodb" className="w-[54px]" />
