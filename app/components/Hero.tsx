@@ -64,12 +64,12 @@ export default function Hero() {
         initial="hidden"
         whileInView="show"
         viewport={{ once: "false", amount: 0.25 }}
-        className="absolute bottom-[80px] text-white right-[38%] lg:right-[45%] font-bold text-xl"
+        className="absolute bottom-[80px] text-white left-[50%] -ml-[50px] font-bold text-xl"
       >
         Scroll Down
       </motion.h1>
       <motion.div
-        className="rounded-full w-12 h-32 border-2 border-white absolute flex justify-center items-center -bottom-[60px] right-[45%] lg:right-[47.5%]"
+        className="rounded-full w-12 h-32 border-2 border-white absolute flex justify-center items-center -bottom-[60px] left-[54%] -ml-[50px]"
         variants={fadeIn("right", "tween", 2, 1)}
         initial="hidden"
         whileInView="show"
