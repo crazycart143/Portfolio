@@ -59,16 +59,14 @@ export default function TechStack() {
 
       <Canvas>
         <OrbitControls
-          enablePan={false}
+          enablePan={true}
           enableZoom={false}
-          enableRotate={false}
-          enableDamping={false}
+          enableRotate={true}
+          enableDamping={true}
+          position={(0, 0, 0)}
           // // maxAzimuthAngle={Math.PI / 30}
           // maxPolarAngle={Math.PI}
           // // minAzimuthAngle={-Math.PI / 4}
-          maxPolarAngle={Math.PI / 2}
-          minDistance={0}
-          maxDistance={200}
         />
         <ambientLight />
         <spotLight

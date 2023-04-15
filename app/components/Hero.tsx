@@ -3,30 +3,6 @@
 import { useGLTF, OrbitControls } from "@react-three/drei";
 import { motion } from "framer-motion";
 import { fadeIn } from "@/utils/motion";
-import { useState } from "react";
-import { Canvas, useFrame, useThree } from "@react-three/fiber";
-
-function GLTFLoader(props) {
-  const { url, scale } = props;
-  const gltf = useGLTF(url, true);
-  const [rotation, setRotation] = useState(0);
-  const { viewport } = useThree();
-
-  useFrame(() => {
-    setRotation((rotation) => rotation + 0.01);
-  });
-
-  gltf.scene.scale.set(scale, scale, scale);
-  gltf.scene.rotation.y = rotation;
-  gltf.scene.position.x = -viewport.width / -6;
-  gltf.scene.position.y = -viewport.height / 19;
-
-  return (
-    <>
-      <primitive object={gltf.scene} dispose={null} />
-    </>
-  );
-}
 
 export default function Hero() {
   return (
@@ -72,35 +48,13 @@ export default function Hero() {
         initial="hidden"
         whileInView="show"
         viewport={{ once: "true", amount: 0.25 }}
-      >
-        <Canvas>
-          <OrbitControls
-            enablePan={false}
-            enableZoom={false}
-            enableRotate={false}
-            enableDamping={false}
-            // maxAzimuthAngle={Math.PI / 30}
-            // maxPolarAngle={Math.PI}
-            // minAzimuthAngle={-Math.PI / 4}
-            // minPolarAngle={0}
-          />
-          <ambientLight />
-          <spotLight
-            castShadow
-            intensity={10}
-            angle={Math.PI / 10}
-            position={[4, 10, 3]}
-            shadow-mapSize-width={2048}
-            shadow-mapSize-height={2048}
-          />
-
-          {/* <pointLight position={[20, 0, 3]} intensity={3} /> */}
-          <GLTFLoader url="gaming_rig.gltf" scale={0.15} />
-          {/* <ambientLight intensity={0.1} /> */}
-          {/* <directionalLight color="white" position={[0, 0, 5]} /> */}
-          {/* <pointLight position={[10, 10, 10]} /> */}
-        </Canvas>
-      </motion.div>
+        className="absolute h-[500px] w-[500px] bottom-[150px] right-[150px] rounded-full border-2 border-white z-10 shadow-xl shadow-gray-100"
+      ></motion.div>
+      <img
+        src="/profile-image.png"
+        alt="profile image"
+        className="w-[700px] absolute right-[50px] z-50  "
+      />
       <motion.h1
         variants={fadeIn("down", "tween", 2, 1)}
         initial="hidden"
