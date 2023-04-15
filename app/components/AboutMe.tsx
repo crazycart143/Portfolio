@@ -8,7 +8,7 @@ export default function AboutMe() {
       initial="hidden"
       whileInView="show"
       viewport={{ once: "true", amount: 0.25 }}
-      className="flex pt-48 px-28"
+      className="flex flex-col px-16 pt-32 lg:pt-48 lg:flex lg:flex-row lg:px-28"
     >
       <img src="/about_me.png" alt="about me image" />
       <div className="flex flex-col items-start justify-start w-full text-black gap-y-5">
@@ -49,13 +49,13 @@ export default function AboutMe() {
             applications I develop are always user-friendly, responsive, and
             visually appealing.
           </motion.p>
-          <div className="flex gap-x-5 justify-start items-center">
+          <div className="flex items-center justify-start gap-x-5">
             <motion.button
               variants={fadeIn("right", "tween", 1.25, 2)}
               initial="hidden"
               whileInView="show"
               viewport={{ once: "true", amount: 0.25 }}
-              className="w-[30%] border-2 border-black py-2 font-bold hover:text-[#f2f2f4] hover:bg-black hover:border-white"
+              className="w-[30%] text-[12px] border-2 border-black py-2 font-bold hover:text-[#f2f2f4] hover:bg-black hover:border-white"
             >
               DOWNLOAD CV
             </motion.button>

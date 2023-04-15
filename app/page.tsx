@@ -30,17 +30,23 @@ export default function Home() {
         </div>
       ) : (
         <>
-          <section id="hero" className="flex relative w-full h-[700px]">
+          <section
+            id="hero"
+            className="flex relative w-full h-[660px] lg:h-[700px]"
+          >
             <Hero />
           </section>
-          <section id="aboutMe" className="w-full h-[800px] bg-[#F2F2F4]">
+          <section
+            id="aboutMe"
+            className="w-full h-[1000px] lg:h-[800px] bg-[#F2F2F4]"
+          >
             <AboutMe />
           </section>
-          <section className="bg-black w-full h-[1000px]">
+          <section className="bg-black w-full h-[1200px] lg:h-[1000px]">
             <Services />
           </section>
           <section className="w-full h-[800px] bg-techstack bg-cover bg-center bg-no-repeat"></section>
-          <section className="w-full h-[800px] bg-[#F2F2F4] relative">
+          <section className="w-full h-[1000px] lg:h-[800px] bg-[#F2F2F4] relative">
             <TechStack />
           </section>
           <section className="w-full h-[940px] bg-black ">

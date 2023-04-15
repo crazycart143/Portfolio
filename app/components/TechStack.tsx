@@ -76,7 +76,7 @@ function GLTFLoader(props) {
 export default function TechStack() {
   return (
     <div className="w-full h-full">
-      <div className="absolute flex flex-col items-center justify-center text-center left-[38%] top-[3%]">
+      <div className="absolute flex flex-col items-center justify-center text-center left-[20px] lg:left-[38%] top-[3%]">
         <h1 className="font-bold text-[40px]">My Tech Stacks</h1>
         <p className="font-light text-[20px]">
           Technology stacks that I am currently working on.
@@ -110,8 +110,8 @@ export default function TechStack() {
         {/* <directionalLight color="white" position={[0, 0, 5]} /> */}
         {/* <pointLight position={[10, 10, 10]} /> */}
       </Canvas>
-      <div className="absolute bottom-[10%] left-[22%] flex flex-col w-[500px]">
-        <div className="flex gap-x-8">
+      <div className="absolute bottom-[4%] left-[17%] flex flex-col lg:w-[500px] w-[350px]">
+        <div className="flex flex-wrap gap-x-2 gap-y-2 lg:gap-x-8">
           <img src="/html.png" alt="html" className="w-[54px]" />
           <img src="/css.png" alt="css" className="w-[54px]" />
           <img src="/js.png" alt="js" className="w-[54px]" />
