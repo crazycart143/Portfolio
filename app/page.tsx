@@ -49,7 +49,7 @@ export default function Home() {
           <section className="w-full h-[1000px] lg:h-[800px] bg-[#F2F2F4] relative">
             <TechStack />
           </section>
-          <section className="w-full h-[940px] bg-black ">
+          <section className="w-full h-[1800px] lg:h-[940px] bg-black ">
             <Projects />
           </section>
           <section className="w-full h-[800px] bg-[#F2F2F4]">
