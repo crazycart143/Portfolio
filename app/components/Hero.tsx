@@ -50,7 +50,11 @@ export default function Hero() {
         viewport={{ once: "true", amount: 0.25 }}
         className="absolute h-[500px] w-[500px] bottom-[150px] right-[150px] rounded-full border-2 border-white z-10 shadow-xl shadow-gray-100"
       ></motion.div>
-      <img
+      <motion.img
+        variants={fadeIn("left", "tween", 2, 1)}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: "true", amount: 0.25 }}
         src="/profile-image.png"
         alt="profile image"
         className="w-[700px] absolute right-[50px] z-50  "
