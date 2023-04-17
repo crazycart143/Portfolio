@@ -8,9 +8,13 @@ export default function AboutMe() {
       initial="hidden"
       whileInView="show"
       viewport={{ once: "true", amount: 0.25 }}
-      className="flex flex-col px-16 pt-32 lg:pt-48 lg:flex lg:flex-row lg:px-28"
+      className="flex flex-col items-center justify-center px-16 pt-32 lg:flex-row lg:pt-48 lg:flex lg:px-28"
     >
-      <img src="/about_me.png" alt="about me image" />
+      <img
+        src="/about_me.png"
+        alt="about me image"
+        className="md:max-w-[80%]"
+      />
       <div className="flex flex-col items-start justify-start w-full text-black gap-y-5">
         <h1 className="text-[18px] font-bold text-black mt-[30px]">
           <TypingText title="| About Me" textStyles="text-start" />
@@ -21,7 +25,7 @@ export default function AboutMe() {
             initial="hidden"
             whileInView="show"
             viewport={{ once: "true", amount: 0.25 }}
-            className="text-[30px]"
+            className="text-[24px] md:text-[30px]"
           >
             ASPIRING WEB DEVELOPER
           </motion.h1>

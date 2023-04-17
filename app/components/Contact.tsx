@@ -1,7 +1,7 @@
 export default function Contact() {
   return (
-    <div className="flex flex-col lg:flex-row gap-x-10 py-[50px] lg:py-[150px] px-[50px] lg:px-[200px] justify-center items-center">
-      <div className="flex flex-col gap-y-6 text-center lg:text-start w-[400px] lg:w-[500px]">
+    <div className="flex flex-col md:flex-row gap-x-10 py-[50px] md:py-[180px] md:justify-start lg:py-[150px] px-[50px] md:px-[20px] lg:px-[200px] justify-center items-center">
+      <div className="flex flex-col gap-y-6 text-center md:text-start w-[400px] md:w-[300px] lg:w-[500px]">
         <h1 className="font-bold text-[40px]">Let's work together.</h1>
         <p className="text-[18px] lg:text-[22px]">
           Contact me if you think that I am qualified for your project or
@@ -11,7 +11,11 @@ export default function Contact() {
           Sorry. Requesting projects is not allowed at this time.
         </button>
       </div>
-      <img src="/contact-img.png" alt="contact image" />
+      <img
+        src="/contact-img.png"
+        alt="contact image"
+        className="md:max-w-[30%]"
+      />
     </div>
   );
 }

@@ -75,7 +75,7 @@ function GLTFLoader(props) {
 
 export default function TechStack() {
   return (
-    <div className="w-full h-[100vh]">
+    <div className="w-full h-[90vh]">
       <Canvas>
         <OrbitControls
           enablePan={true}

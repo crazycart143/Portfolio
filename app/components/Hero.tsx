@@ -7,7 +7,7 @@ import { fadeIn } from "@/utils/motion";
 export default function Hero() {
   return (
     <>
-      <div className="flex w-full flex-col h-full top-0 lg:top-[140px] lg:absolute justify-start items-center text-center lg:justify-start lg:items-start z-10 text-[#F2F2F4] px-[50px] lg:px-[150px] py-[120px] lg:py-[50px]">
+      <div className="lg:hidden flex w-full flex-col h-full top-0 lg:top-[140px] lg:absolute justify-start items-center text-center lg:justify-start lg:items-start z-10 text-[#F2F2F4] px-[50px] lg:px-[150px] py-[120px] lg:py-[50px]">
         <motion.p
           variants={fadeIn("right", "tween", 0.5, 1)}
           initial="hidden"
@@ -69,7 +69,7 @@ export default function Hero() {
         Scroll Down
       </motion.h1>
       <motion.div
-        className="rounded-full w-12 h-32 border-2 border-white absolute flex justify-center items-center -bottom-[60px] left-[54%] -ml-[50px]"
+        className="rounded-full w-12 h-32 border-2 border-white absolute flex justify-center items-center -bottom-[60px] left-[47%] md:left-[48%] "
         variants={fadeIn("right", "tween", 2, 1)}
         initial="hidden"
         whileInView="show"
