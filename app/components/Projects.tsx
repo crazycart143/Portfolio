@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Projects() {
   return (
-    <section className="flex gap-x-4 flex-col-reverse gap-y-8 md:grid grid-cols-project h-full px-[50px] md:px-[20px] lg:px-[50px] py-[50px] ">
+    <section className="flex gap-x-4 flex-col-reverse gap-y-8 md:grid grid-cols-project h-full px-[50px] md:px-[20px] lg:px-[50px] py-[50px] xl:px-[160px]">
       <div className="flex flex-col gap-y-10">
         <div className="flex">
           <div className="flex h-[450px] md:h-[350px] flex-col justify-start items-center md:items-start gap-y-4 text-black bg-white border-2 border-black rounded-lg lg:h-[250px] w-[650px] py-4 px-10">
@@ -44,7 +44,7 @@ export default function Projects() {
           <img src="" alt="" />
         </div>
       </div>
-      <div className="top-0 right-0 text-white md:px-[20px]">
+      <div className="top-0 left-0 text-white md:px-[20px] lg:px-0">
         <div className="sticky top-0 left-0 flex flex-col gap-y-6">
           <h1 className="font-bold text-[40px]">Featured Projects</h1>
           <p>

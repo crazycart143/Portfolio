@@ -8,7 +8,7 @@ export default function AboutMe() {
       initial="hidden"
       whileInView="show"
       viewport={{ once: "true", amount: 0.25 }}
-      className="flex flex-col items-center justify-center px-16 pt-32 lg:flex-row lg:pt-20 lg:flex lg:px-28"
+      className="flex flex-col items-center justify-center px-16 pt-32 lg:flex-row lg:pt-20 lg:flex lg:px-28 xl:pt-32"
     >
       <img
         src="/about_me.png"
@@ -59,7 +59,7 @@ export default function AboutMe() {
               initial="hidden"
               whileInView="show"
               viewport={{ once: "true", amount: 0.25 }}
-              className="w-[30%] lg:w-[50%] text-[12px] border-2 border-black py-2 font-bold hover:text-[#f2f2f4] hover:bg-black hover:border-white"
+              className="w-[30%] lg:w-[50%] text-[12px] lg:text-[14px] border-2 border-black py-2 font-bold hover:text-[#f2f2f4] hover:bg-black hover:border-white"
             >
               DOWNLOAD CV
             </motion.button>

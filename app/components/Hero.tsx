@@ -7,7 +7,7 @@ import { fadeIn } from "@/utils/motion";
 export default function Hero() {
   return (
     <>
-      <div className=" flex w-full flex-col h-full top-0 lg:top-[140px] lg:absolute justify-start items-center text-center lg:justify-start lg:items-start z-10 text-[#F2F2F4] px-[50px] lg:px-[50px] py-[120px] lg:py-[50px]">
+      <div className=" flex w-full flex-col h-full top-0 lg:top-[140px] lg:absolute justify-start items-center text-center lg:justify-start lg:items-start z-10 text-[#F2F2F4] px-[50px] lg:px-[50px] xl:px-[100px] py-[120px] lg:py-[50px]">
         <motion.p
           variants={fadeIn("right", "tween", 0.5, 1)}
           initial="hidden"
@@ -48,7 +48,7 @@ export default function Hero() {
         initial="hidden"
         whileInView="show"
         viewport={{ once: "true", amount: 0.25 }}
-        className="hidden lg:block h-[300px] w-[300px] absolute lg:h-[400px] lg:w-[400px] bottom-[250px] right-0 lg:right-[40px] rounded-full border-2 border-white z-10 shadow-xl shadow-gray-100"
+        className="hidden lg:block h-[300px] w-[300px] absolute lg:h-[400px] lg:w-[400px] xl:h-[500px] xl:w-[500px] bottom-[250px] xl:bottom-[150px] right-0 lg:right-[40px] xl:right-[100px] rounded-full border-2 border-white z-10 shadow-xl shadow-gray-100"
       ></motion.div>
       <motion.img
         variants={fadeIn("left", "tween", 2, 1)}
@@ -57,7 +57,7 @@ export default function Hero() {
         viewport={{ once: "true", amount: 0.25 }}
         src="/profile-image.png"
         alt="profile image"
-        className="w-[700px] absolute -right-[100px] z-50 hidden lg:block"
+        className="w-[700px] absolute -right-[100px] z-50 hidden lg:block xl:right-0"
       />
       <motion.h1
         variants={fadeIn("down", "tween", 2, 1)}

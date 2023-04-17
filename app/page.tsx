@@ -33,7 +33,7 @@ export default function Home() {
         <>
           <section
             id="hero"
-            className="flex relative w-full h-[660px] lg:h-[700px] lg:overflow-hidden"
+            className="flex relative w-full h-[660px] lg:h-[700px] lg:overflow-hidden xl:overflow-visible"
           >
             <Hero />
           </section>
