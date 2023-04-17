@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Services() {
   return (
-    <section className="text-white flex flex-col justify-center items-center px-[50px] lg:px-[100px]">
+    <section className="text-white flex flex-col justify-center items-center px-[50px] lg:px-[70px]">
       <h1 className="mt-[50px] text-[40px] font-bold tracking-wider">
         What I do?
       </h1>

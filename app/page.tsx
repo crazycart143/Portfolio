@@ -33,7 +33,7 @@ export default function Home() {
         <>
           <section
             id="hero"
-            className="flex relative w-full h-[660px] lg:h-[700px]"
+            className="flex relative w-full h-[660px] lg:h-[700px] overflow-hidden"
           >
             <Hero />
           </section>
@@ -47,7 +47,7 @@ export default function Home() {
             <Services />
           </section>
           <section className="w-full h-[800px] bg-techstack bg-cover bg-center bg-no-repeat"></section>
-          <section className="w-full h-[500px] lg:h-[800px] bg-[#F2F2F4] relative">
+          <section className="w-full h-[500px] lg:h-[700px] bg-[#F2F2F4] relative">
             <TechStack />
           </section>
           <section>
