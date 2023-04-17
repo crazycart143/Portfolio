@@ -33,7 +33,7 @@ export default function Home() {
         <>
           <section
             id="hero"
-            className="flex relative w-full h-[660px] lg:h-[700px] overflow-hidden"
+            className="flex relative w-full h-[660px] lg:h-[700px] lg:overflow-hidden"
           >
             <Hero />
           </section>
@@ -47,13 +47,13 @@ export default function Home() {
             <Services />
           </section>
           <section className="w-full h-[800px] bg-techstack bg-cover bg-center bg-no-repeat"></section>
-          <section className="w-full h-[500px] lg:h-[700px] bg-[#F2F2F4] relative">
+          <section className="w-full h-[550px] bg-[#F2F2F4] relative">
             <TechStack />
           </section>
           <section>
             <TechStackDetails />
           </section>
-          <section className="w-full h-[1800px] md:h-[1240px] lg:h-[940px] bg-black ">
+          <section className="w-full h-[1900px] md:h-[1240px] lg:h-[940px] bg-black ">
             <Projects />
           </section>
           <section className="w-full h-[800px] bg-[#F2F2F4]">

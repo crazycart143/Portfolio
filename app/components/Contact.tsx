@@ -1,6 +1,6 @@
 export default function Contact() {
   return (
-    <div className="flex flex-col md:flex-row gap-x-10 py-[50px] md:py-[180px] md:justify-start lg:py-[150px] px-[50px] md:px-[50px] lg:px-[200px] justify-center items-center">
+    <div className="flex flex-col md:flex-row gap-x-10 py-[50px] md:py-[180px] md:justify-start lg:py-[150px] px-[50px] md:px-[50px] justify-center items-center">
       <div className="flex flex-col gap-y-6 text-center md:text-start w-full lg:w-[500px]">
         <h1 className="font-bold text-[40px]">Let's work together.</h1>
         <p className="text-[18px] lg:text-[22px]">
