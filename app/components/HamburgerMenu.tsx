@@ -1,7 +1,4 @@
-import { useState } from "react";
-
-export default function HamburgerMenu() {
-  const [isOpen, setIsOpen] = useState(false);
+export default function HamburgerMenu({ setIsOpen, isOpen }) {
   const genericHamburgerLine = `h-1 w-6 my-1 rounded-full bg-white transition ease transform duration-300`;
   return (
     <button

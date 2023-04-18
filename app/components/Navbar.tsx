@@ -3,8 +3,11 @@
 import { navVariants } from "@/utils/motion";
 import { motion } from "framer-motion";
 import HamburgerMenu from "./HamburgerMenu";
+import { useState } from "react";
 
 export default function Navbar() {
+  const [isOpen, setIsOpen] = useState(null);
+
   return (
     <motion.nav
       variants={navVariants}
@@ -19,10 +22,10 @@ export default function Navbar() {
         </h1>
       </div>
       <div className="hidden lg:flex justify-center items-center gap-x-20 text-lg text-[#F2F2F4]">
-        <a href="">Home</a>
-        <a href="">About</a>
-        <a href="">Skills</a>
-        <a href="">Contact</a>
+        <a href="#aboutMe">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
       </div>
       <div className="hidden lg:flex justify-end items-center text-[#4c4c4d]">
         <button className="py-2 px-6 bg-[#F2F2F4] text-black rounded-lg font-bold">
@@ -30,8 +33,53 @@ export default function Navbar() {
         </button>
       </div>
       <div className="flex items-center justify-end">
-        <HamburgerMenu />
+        <HamburgerMenu setIsOpen={setIsOpen} isOpen={isOpen} />
       </div>
+      <motion.div
+        className={`${
+          isOpen ? "" : "hidden"
+        } w-full block flex-grow bg-black h-[100vh] z-50 fixed top-0 left-0 py-[50px] lg:hidden`}
+        initial={{ right: -150 }}
+        animate={{ right: 0 }}
+        transition={{ duration: 0.3 }}
+      >
+        <div className="flex items-end justify-end mr-[50px]">
+          <HamburgerMenu setIsOpen={setIsOpen} isOpen={isOpen} />
+        </div>
+        <div className="flex flex-col text-white mt-[50px] w-full">
+          <div className="pl-[50px] hover:bg-slate-300 py-4">
+            <div className="border-4 border-[#F2F2F4] rounded-xl w-2 px-6 py-[4px] flex justify-center items-center">
+              <h1 className="text-[24px] font-bold text-[#F2F2F4] tracking-tighter ">
+                Ke
+              </h1>
+            </div>
+          </div>
+          <a
+            className="py-[10px] text-[18px] pl-[50px] hover:bg-slate-300"
+            href="#aboutMe"
+          >
+            About
+          </a>
+          <a
+            className="py-[10px] hover:bg-slate-300 text-[18px] pl-[50px]"
+            href="#skills"
+          >
+            Skills
+          </a>
+          <a
+            className="py-[10px] hover:bg-slate-300 text-[18px] pl-[50px]"
+            href="#projects"
+          >
+            Projects
+          </a>
+          <a
+            className="py-[10px] hover:bg-slate-300 text-[18px] pl-[50px]"
+            href="#contact"
+          >
+            Contact
+          </a>
+        </div>
+      </motion.div>
     </motion.nav>
   );
 }

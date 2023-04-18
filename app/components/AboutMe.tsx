@@ -13,7 +13,7 @@ export default function AboutMe() {
       <img
         src="/about_me.png"
         alt="about me image"
-        className="md:max-w-[80%] lg:max-w-[60%]"
+        className="md:max-w-[80%] lg:max-w-[60%] pointer-events-none"
       />
       <div className="flex flex-col items-start justify-start w-full text-black gap-y-5">
         <h1 className="text-[18px] font-bold text-black mt-[30px]">
