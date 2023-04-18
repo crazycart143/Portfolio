@@ -108,6 +108,21 @@ export const fadeIn = (direction, type, delay, duration) => ({
   },
 });
 
+export const sideVariants = {
+  closed: {
+    transition: {
+      staggerChildren: 0.2,
+      staggerDirection: -1,
+    },
+  },
+  open: {
+    transition: {
+      staggerChildren: 0.2,
+      staggerDirection: 1,
+    },
+  },
+};
+
 export const planetVariants = (direction) => ({
   hidden: {
     x: direction === "left" ? "-100%" : "100%",

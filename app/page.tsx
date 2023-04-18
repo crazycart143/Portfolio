@@ -6,7 +6,6 @@ import AboutMe from "./components/AboutMe";
 import Hero from "./components/Hero";
 import TechStack from "./components/TechStack";
 import Loading from "./components/Loading";
-import { AnimatePresence } from "framer-motion";
 import Services from "./components/Services";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
