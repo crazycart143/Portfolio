@@ -34,54 +34,56 @@ export default function Navbar() {
       <div className="flex items-center justify-end">
         <HamburgerMenu setIsOpen={setIsOpen} isOpen={isOpen} />
       </div>
-      <motion.aside initial={{ width: 0 }} animate={{ width: 100 + "%" }}>
-        <motion.div
-          className={`${
-            isOpen ? "" : "hidden"
-          } w-full block flex-grow bg-black h-[100vh] z-50 fixed top-0 left-0 py-[50px] lg:hidden`}
-          initial="closed"
-          animate="open"
-          variants={sideVariants}
-          transition={{ duration: 5 }}
-        >
-          <div className="flex items-end justify-end mr-[50px]">
-            <HamburgerMenu setIsOpen={setIsOpen} isOpen={isOpen} />
-          </div>
-          <div className="flex flex-col text-white mt-[50px] w-full">
-            <div className="pl-[50px] hover:bg-slate-300 py-4 cursor-pointer">
-              <div className="border-4 border-[#F2F2F4] rounded-xl w-2 px-6 py-[4px] flex justify-center items-center">
-                <h1 className="text-[24px] font-bold text-[#F2F2F4] tracking-tighter ">
-                  Ke
-                </h1>
-              </div>
+      <motion.div
+        className={`${
+          isOpen ? "translate-x-[0%]" : "translate-x-[100%]"
+        } w-full block flex-grow bg-black h-[100vh] z-50 fixed top-0 left-0 py-[50px] lg:hidden transition-all`}
+        initial="closed"
+        animate="open"
+        variants={sideVariants}
+        transition={{ duration: 5 }}
+      >
+        <div className="flex items-end justify-end mr-[50px]">
+          <HamburgerMenu setIsOpen={setIsOpen} isOpen={isOpen} />
+        </div>
+        <div className="flex flex-col text-white mt-[50px] w-full">
+          <div className="pl-[50px] hover:bg-slate-300 py-4 cursor-pointer">
+            <div className="border-4 border-[#F2F2F4] rounded-xl w-2 px-6 py-[4px] flex justify-center items-center">
+              <h1 className="text-[24px] font-bold text-[#F2F2F4] tracking-tighter ">
+                Ke
+              </h1>
             </div>
-            <a
-              className="py-[10px] text-[18px] pl-[50px] hover:bg-slate-300"
-              href="#aboutMe"
-            >
-              About
-            </a>
-            <a
-              className="py-[10px] hover:bg-slate-300 text-[18px] pl-[50px]"
-              href="#skills"
-            >
-              Skills
-            </a>
-            <a
-              className="py-[10px] hover:bg-slate-300 text-[18px] pl-[50px]"
-              href="#projects"
-            >
-              Projects
-            </a>
-            <a
-              className="py-[10px] hover:bg-slate-300 text-[18px] pl-[50px]"
-              href="#contact"
-            >
-              Contact
-            </a>
           </div>
-        </motion.div>
-      </motion.aside>
+          <a
+            className="py-[10px] text-[18px] pl-[50px] hover:bg-slate-300"
+            href="#aboutMe"
+            onClick={() => setIsOpen(!isOpen)}
+          >
+            About
+          </a>
+          <a
+            className="py-[10px] hover:bg-slate-300 text-[18px] pl-[50px]"
+            href="#skills"
+            onClick={() => setIsOpen(!isOpen)}
+          >
+            Skills
+          </a>
+          <a
+            className="py-[10px] hover:bg-slate-300 text-[18px] pl-[50px]"
+            href="#projects"
+            onClick={() => setIsOpen(!isOpen)}
+          >
+            Projects
+          </a>
+          <a
+            className="py-[10px] hover:bg-slate-300 text-[18px] pl-[50px]"
+            href="#contact"
+            onClick={() => setIsOpen(!isOpen)}
+          >
+            Contact
+          </a>
+        </div>
+      </motion.div>
     </motion.nav>
   );
 }
