@@ -23,7 +23,7 @@ export default function Hero() {
           className="text-[60px] leading-tight"
           viewport={{ once: "true", amount: 0.25 }}
         >
-          I'm Keanu John
+          I&apos;m Keanu John
         </motion.h1>
         <motion.p
           variants={fadeIn("right", "tween", 1.5, 1)}
