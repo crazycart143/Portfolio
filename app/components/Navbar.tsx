@@ -3,17 +3,28 @@
 import { navVariants, sideVariants } from "@/utils/motion";
 import { motion } from "framer-motion";
 import HamburgerMenu from "./HamburgerMenu";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(null);
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    // Simulate loading time
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 4000);
+  }, []);
+
   return (
     <motion.nav
       variants={navVariants}
       initial="hidden"
       whileInView="show"
       viewport={{ once: "true", amount: 0.25 }}
-      className="z-10 grid grid-cols-2 px-8 py-6 lg:grid-cols-3 lg:px-16"
+      className={`${
+        isLoading ? "hidden" : "grid"
+      } z-10 grid-cols-2 px-8 py-6 lg:grid-cols-3 lg:px-16`}
     >
       <div className="border-4 border-[#F2F2F4] rounded-xl w-10 px-6 flex justify-center items-center">
         <h1 className="text-[30px] font-bold text-[#F2F2F4] tracking-tighter">

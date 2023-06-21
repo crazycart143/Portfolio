@@ -55,10 +55,7 @@ export default function Home() {
           <section>
             <TechStackDetails />
           </section>
-          <section
-            id="projects"
-            className="w-full h-[1900px] md:h-[1240px] lg:h-[940px] bg-black "
-          >
+          <section id="projects" className="w-full h-full bg-black ">
             <Projects />
           </section>
           <section id="contact" className="w-full h-[800px] bg-[#F2F2F4]">

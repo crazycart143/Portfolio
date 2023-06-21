@@ -3,17 +3,28 @@
 import { footerVariants } from "@/utils/motion";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function Footer() {
   const [isHovered, setIsHovered] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    // Simulate loading time
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 4000);
+  }, []);
+
   return (
     <motion.div
       variants={footerVariants}
       initial="hidden"
       whileInView="show"
       viewport={{ once: "true", amount: 0.25 }}
-      className="h-[600px] lg:h-[500px] bg-black flex flex-col gap-y-6 justify-start items-center pt-[100px] text-white"
+      className={`${
+        isLoading ? "hidden" : "flex"
+      } h-[600px] lg:h-[500px] bg-black flex-col gap-y-6 justify-start items-center pt-[100px] text-white`}
     >
       <div className="flex items-center justify-center">
         <img src="/icon.png" alt="website icon" className="w-14" />

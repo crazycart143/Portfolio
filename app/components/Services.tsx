@@ -48,8 +48,7 @@ export default function Services() {
             </div>
             <p className="mt-[24px]">
               Creating and setup back end API endpoints, routes, and database
-              models using Express JS, Node JS, MongoDB, and adding
-              authentication using JWT.
+              models using MongoDB, and adding authentication using Next-auth.
             </p>
           </div>
         </div>
@@ -70,7 +69,7 @@ export default function Services() {
               <h2 className="font-bold mt-[8px]"> Responsive Design</h2>
             </div>
             <p className="mt-[24px]">
-              Make sure that the web design is responsive and adapting to
+              Making sure that the web design is responsive and adapting to
               different screen size across different devices.
             </p>
           </div>
