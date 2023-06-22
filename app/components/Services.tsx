@@ -2,12 +2,12 @@ import React from "react";
 
 export default function Services() {
   return (
-    <section className="text-white flex flex-col justify-center items-center px-[50px] lg:px-[70px] xl:px-[120px]">
+    <section className="text-white flex flex-col justify-center items-center px-[50px] lg:px-[70px] xl:px-[120px] pb-14">
       <h1 className="mt-[50px] text-[40px] font-bold tracking-wider">
         What I do?
       </h1>
-      <div className="flex flex-col flex-wrap h-full w-full justify-start items-start gap-y-28 mt-[50px] ">
-        <div className="flex flex-col grid-cols-2 md:grid gap-x-28">
+      <div className="flex flex-col flex-wrap h-full w-full justify-start items-start gap-y-20 mt-[50px] ">
+        <div className="flex flex-col grid-cols-2 md:grid gap-x-28 gap-y-10 md:gap-y-0">
           <div className="flex flex-col items-start justify-start w-full text-start">
             <div className="flex text-center gap-x-4">
               <svg
@@ -33,10 +33,22 @@ export default function Services() {
               display data to the UI.
             </p>
           </div>
-          <div>asd</div>
+          <div>
+            <img
+              src="/videos/backend.gif"
+              alt="backend gif"
+              className="w-full"
+            />
+          </div>
         </div>
-        <div className="flex flex-col-reverse grid-cols-2 md:grid gap-x-28">
-          <div>asd</div>
+        <div className="flex flex-col-reverse grid-cols-2 md:grid gap-x-28 gap-y-10 md:gap-y-0">
+          <div>
+            <img
+              src="/videos/backend.gif"
+              alt="backend gif"
+              className="w-full"
+            />
+          </div>
           <div className="flex flex-col items-start justify-start w-full text-start">
             <div className="flex text-center gap-x-4">
               <img
@@ -52,7 +64,7 @@ export default function Services() {
             </p>
           </div>
         </div>
-        <div className="flex flex-col grid-cols-2 md:grid gap-x-28">
+        <div className="flex flex-col grid-cols-2 md:grid gap-x-28 gap-y-10 md:gap-y-0">
           <div className="flex flex-col items-start justify-start w-full text-start">
             <div className="flex text-center gap-x-8">
               <svg
@@ -73,7 +85,13 @@ export default function Services() {
               different screen size across different devices.
             </p>
           </div>
-          <div>asd</div>
+          <div>
+            <img
+              src="/videos/backend.gif"
+              alt="backend gif"
+              className="w-full"
+            />
+          </div>
         </div>
       </div>
     </section>

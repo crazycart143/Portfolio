@@ -42,10 +42,7 @@ export default function Home() {
           >
             <AboutMe />
           </section>
-          <section
-            id="skills"
-            className="bg-black w-full h-[1200px] lg:h-[1000px]"
-          >
+          <section id="skills" className="w-full h-full bg-black">
             <Services />
           </section>
           <section className="w-full h-[800px] bg-techstack bg-cover bg-center bg-no-repeat"></section>
