@@ -2,6 +2,7 @@
 
 import { footerVariants } from "@/utils/motion";
 import { motion } from "framer-motion";
+import Image from "next/image";
 import Link from "next/link";
 import { useState, useEffect } from "react";
 
@@ -27,7 +28,13 @@ export default function Footer() {
       } h-[600px] lg:h-[500px] bg-black flex-col gap-y-6 justify-start items-center pt-[100px] text-white`}
     >
       <div className="flex items-center justify-center">
-        <img src="/icon.png" alt="website icon" className="w-14" />
+        <Image
+          width={56}
+          height={56}
+          src="/icon.png"
+          alt="website icon"
+          className="w-14"
+        />
         <h1 className="text-[16px]">Keanu John Lariosa © 2023</h1>
       </div>
       <h1 className="text-center w-[400px] lg:w-[800px] leading-8">
