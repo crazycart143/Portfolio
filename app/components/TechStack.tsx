@@ -87,9 +87,8 @@ export default function TechStack() {
           maxPolarAngle={Math.PI}
           // // minAzimuthAngle={-Math.PI / 4}
         />
-        <ambientLight />
+        <ambientLight intensity={0.5} />
         <spotLight
-          castShadow
           intensity={10}
           angle={Math.PI / 10}
           position={[10, 120, 40]}
