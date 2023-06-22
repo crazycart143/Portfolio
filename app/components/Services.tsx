@@ -87,7 +87,7 @@ export default function Services() {
           </div>
           <div>
             <img
-              src="/videos/backend.gif"
+              src="/videos/responsive.gif"
               alt="backend gif"
               className="w-full"
             />
