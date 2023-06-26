@@ -1,6 +1,5 @@
 "use client";
 
-import { footerVariants } from "@/utils/motion";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
@@ -18,11 +17,7 @@ export default function Footer() {
   }, []);
 
   return (
-    <motion.div
-      variants={footerVariants}
-      initial="hidden"
-      whileInView="show"
-      viewport={{ once: "true", amount: 0.25 }}
+    <div
       className={`${
         isLoading ? "hidden" : "flex"
       } h-[600px] lg:h-[500px] bg-black flex-col gap-y-6 justify-start items-center pt-[100px] text-white`}
@@ -71,6 +66,6 @@ export default function Footer() {
           )}
         </button>
       </Link>
-    </motion.div>
+    </div>
   );
 }
