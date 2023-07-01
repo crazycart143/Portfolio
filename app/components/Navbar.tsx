@@ -18,7 +18,7 @@ export default function Navbar() {
   }, []);
 
   return (
-    <div className="md:flex md:w-full md:items-center md:justify-center">
+    <div className="lg:flex lg:w-full lg:items-center lg:justify-center">
       <motion.nav
         variants={navVariants}
         initial="hidden"
