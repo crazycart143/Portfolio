@@ -43,12 +43,13 @@ export default function Hero() {
           View my projects
         </motion.button>
       </div>
+
       <motion.div
         variants={fadeIn("left", "tween", 2, 1)}
         initial="hidden"
         whileInView="show"
         viewport={{ once: "true", amount: 0.25 }}
-        className="hidden lg:block h-[300px] w-[300px] absolute lg:h-[400px] lg:w-[400px] xl:h-[500px] xl:w-[500px] bottom-[250px] xl:bottom-[150px] right-0 lg:right-[40px] xl:right-[100px] rounded-full border-2 border-white z-10 shadow-xl shadow-gray-100"
+        className="hidden lg:block h-[300px] w-[300px] absolute lg:h-[400px] lg:w-[400px] xl:h-[500px] xl:w-[500px] bottom-[250px] xl:bottom-[150px] right-0 lg:right-[40px] xl:right-auto ml-[720px] rounded-full border-2 border-white z-10 shadow-xl shadow-gray-100"
       ></motion.div>
       <motion.img
         variants={fadeIn("left", "tween", 2, 1)}
@@ -57,7 +58,7 @@ export default function Hero() {
         viewport={{ once: "true", amount: 0.25 }}
         src="/profile-image.png"
         alt="profile image"
-        className="w-[700px] absolute -right-[100px] z-50 hidden lg:block xl:right-0 pointer-events-none"
+        className="w-[700px] absolute -right-[100px] z-50 hidden lg:block xl:right-auto ml-[720px] pointer-events-none "
       />
       <motion.h1
         variants={fadeIn("down", "tween", 2, 1)}
@@ -68,6 +69,7 @@ export default function Hero() {
       >
         Scroll Down
       </motion.h1>
+
       <motion.div
         variants={fadeIn("right", "tween", 2, 1)}
         initial="hidden"
