@@ -1,6 +1,6 @@
 export default function TechStackDetails() {
   return (
-    <div className="flex px-[50px] bg-[#f2f2f4] flex-col justify-center items-center gap-y-8 w-full lg:h-[250px] h-full pb-12 pt-20">
+    <div className="flex px-[50px] bg-[#f2f2f4] flex-col justify-center items-center gap-y-8 w-full lg:h-[250px] h-full pb-12 ">
       <div className="flex flex-col items-center justify-center text-center text-black">
         <h1 className="font-bold text-[40px]">My Tech Stacks</h1>
         <p className="font-light text-[20px]">
