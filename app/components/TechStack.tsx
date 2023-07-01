@@ -51,7 +51,7 @@ function GLTFLoader(props) {
 
 export default function TechStack() {
   return (
-    <div className="w-full h-[83vh]">
+    <div className="w-full h-[83vh] xl:h-auto">
       <Canvas camera={{ fov: 75, position: [0, 0, -30] }}>
         <OrbitControls
           enableZoom={false}
