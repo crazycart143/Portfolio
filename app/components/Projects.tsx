@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Projects() {
   return (
-    <section className="flex gap-x-4 lg:gap-x-10 flex-col-reverse gap-y-8 md:grid grid-cols-project h-full px-[50px] md:px-[20px] lg:px-[50px] py-[50px] xl:px-[160px]">
+    <section className="flex gap-x-4 lg:gap-x-10 flex-col-reverse gap-y-8 md:grid grid-cols-project h-full px-[50px] md:px-[20px] lg:px-[50px] py-[50px] xl:px-[160px] max-w-[1400px]">
       <div className="flex flex-col gap-y-10">
         <div className="flex flex-col items-center justify-center w-full h-full py-4 text-black bg-white border-2 border-black rounded-lg">
           <div className="flex flex-col items-center justify-center gap-y-4 ">
@@ -60,7 +60,7 @@ export default function Projects() {
       </div>
       <div className="top-0 left-0 text-white md:px-[20px] lg:px-0">
         <div className="sticky top-0 left-0 flex flex-col gap-y-6">
-          <h1 className="font-bold text-[40px]">Featured Projects</h1>
+          <h1 className="font-bold text-[40px] ">Featured Projects</h1>
           <p>
             These are my featured projects, you can view all of my projects by
             clicking this link.

@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Services() {
   return (
-    <section className="text-white flex flex-col justify-center items-center px-[50px] lg:px-[70px] xl:px-[120px] pb-14">
+    <section className="text-white flex flex-col justify-center items-center px-[50px] lg:px-[70px] xl:px-[120px] pb-14 max-w-[1400px]">
       <h1 className="mt-[50px] text-[40px] font-bold tracking-wider">
         What I do?
       </h1>
@@ -64,7 +64,7 @@ export default function Services() {
             </p>
           </div>
         </div>
-        <div className="flex flex-col grid-cols-2 md:grid gap-x-28 gap-y-10 md:gap-y-0">
+        <div className="flex flex-col grid-cols-2 md:grid gap-x-28 gap-y-10 md:gap-y-0 ">
           <div className="flex flex-col items-start justify-start w-full text-start">
             <div className="flex text-center gap-x-8">
               <svg

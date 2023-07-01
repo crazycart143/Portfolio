@@ -20,7 +20,7 @@ export default function Footer() {
     <div
       className={`${
         isLoading ? "hidden" : "flex"
-      } h-[600px] lg:h-[500px] bg-black flex-col gap-y-6 justify-start items-center pt-[100px] text-white`}
+      } h-full lg:h-[500px] bg-black flex-col gap-y-6 justify-start items-center pt-[100px] text-white px-5 pb-10`}
     >
       <div className="flex items-center justify-center">
         <Image
@@ -32,12 +32,12 @@ export default function Footer() {
         />
         <h1 className="text-[16px]">Keanu John Lariosa © 2023</h1>
       </div>
-      <h1 className="text-center w-[400px] lg:w-[800px] leading-8">
+      <h1 className="text-center w-full lg:w-[800px] leading-8">
         EN . This website was developed by Keanu John Lariosa. It cannot and
         should not be reproduced in any forms or by any means without the
         consent from him.
       </h1>
-      <h1 className="text-center w-[400px] lg:w-[800px] leading-8">
+      <h1 className="text-center w-full lg:w-[800px] leading-8">
         FIL . Ang website na ito ay ginawa ni Keanu John Lariosa. Ito ay hindi
         maaari at hindi dapat kopyahin sa anumang banhay o sa anumang paraan
         nang walang pahintulot galing sa kaniya.

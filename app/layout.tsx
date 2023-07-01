@@ -17,7 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className="bg-black font-germalt">
+      <body className="overflow-x-hidden bg-black font-germalt md:overflow-visible">
         <Navbar />
         {children}
         <Footer />
