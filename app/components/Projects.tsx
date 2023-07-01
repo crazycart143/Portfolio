@@ -1,5 +1,6 @@
 import React from "react";
 import data from "../../data/data.json";
+import Link from "next/link";
 
 export default function Projects() {
   return (
@@ -40,9 +41,12 @@ export default function Projects() {
             As an aspiring fullstack developer, I am considering this as my
             success and a stepping stone to achieve my goals.
           </p>
-          <button className="px-6 py-4 font-bold text-black bg-white border-2 border-black md:py-2">
+          <Link
+            href="/projects"
+            className="flex items-center justify-center px-6 py-4 font-bold text-black bg-white border-2 border-black md:py-2"
+          >
             VIEW MY PROJECTS
-          </button>
+          </Link>
         </div>
       </div>
     </section>

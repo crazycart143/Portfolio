@@ -22,15 +22,15 @@ export default function Page() {
         {data.map((project, index) => (
           <Link
             key={index}
-            href="/"
-            className="flex flex-col items-center justify-center w-full h-full text-center rounded-xl"
+            href={project.src}
+            className="flex flex-col items-center justify-center w-full h-full text-center transition-all duration-300 transform rounded-xl hover:scale-105"
           >
             <Image
               src={project.image}
               width={500}
               height={500}
               alt={project.title}
-              className="object-contain w-full rounded-2xl"
+              className="object-contain w-full rounded-2xl "
             />
             <h1 className="mt-4">{project.title}</h1>
             <p className="text-[12px] font-thin">{project.description}</p>

@@ -37,7 +37,7 @@ export default function Navbar() {
           </h1>
         </Link>
         <div className="hidden lg:flex justify-center items-center gap-x-20 text-lg text-[#F2F2F4]">
-          <a href="#aboutMe">About</a>
+          <a href="/">Home</a>
           <a href="#skills">Skills</a>
           <a href="#projects">Projects</a>
           <a href="#contact">Contact</a>
@@ -72,10 +72,10 @@ export default function Navbar() {
             </div>
             <a
               className="py-[10px] text-[18px] pl-[50px] hover:bg-slate-300"
-              href="#aboutMe"
+              href="/"
               onClick={() => setIsOpen(!isOpen)}
             >
-              About
+              Home
             </a>
             <a
               className="py-[10px] hover:bg-slate-300 text-[18px] pl-[50px]"
