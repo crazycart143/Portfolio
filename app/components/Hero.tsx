@@ -1,6 +1,5 @@
 "use client";
 
-import { useGLTF, OrbitControls } from "@react-three/drei";
 import { motion } from "framer-motion";
 import { fadeIn } from "@/utils/motion";
 
@@ -75,7 +74,7 @@ export default function Hero() {
         initial="hidden"
         whileInView="show"
         viewport={{ once: "false", amount: 0.25 }}
-        className="rounded-full w-12 h-32 border-2 border-white absolute flex justify-center items-center -bottom-[60px] left-[44%] md:left-[48%] lg:left-[48.5%]"
+        className="rounded-full w-12 h-32 border-2 border-white absolute flex justify-center items-center -bottom-[60px] left-[44%] md:left-[48%] lg:left-[48.5%] xl:left-auto"
       >
         <motion.div
           initial={{ top: 0, opacity: 1 }}
