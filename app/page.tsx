@@ -10,11 +10,12 @@ import Services from "./components/Services";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import TechStackDetails from "./components/TechStackDetails";
+import { usePathname } from "next/navigation";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
-
+  const pathname = usePathname();
   useEffect(() => {
     // Simulate loading time
     setTimeout(() => {

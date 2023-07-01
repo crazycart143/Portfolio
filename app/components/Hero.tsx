@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { fadeIn } from "@/utils/motion";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -32,15 +33,17 @@ export default function Hero() {
         >
           a <span className="font-bold">full-stack web developer</span>
         </motion.p>
-        <motion.button
-          variants={fadeIn("right", "tween", 2, 1)}
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: "true", amount: 0.25 }}
-          className="cursor-pointer rounded-xl mt-[30px] py-3 px-4 font-semibold bg-[#F2F2F4] text-black"
-        >
-          View my projects
-        </motion.button>
+        <Link href="/projects">
+          <motion.button
+            variants={fadeIn("right", "tween", 2, 1)}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: "true", amount: 0.25 }}
+            className="cursor-pointer rounded-xl mt-[30px] py-3 px-4 font-semibold bg-[#F2F2F4] text-black"
+          >
+            View my projects
+          </motion.button>
+        </Link>
       </div>
 
       <motion.div
