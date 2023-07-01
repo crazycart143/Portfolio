@@ -4,6 +4,7 @@ import { navVariants, sideVariants } from "@/utils/motion";
 import { motion } from "framer-motion";
 import HamburgerMenu from "./HamburgerMenu";
 import { useState, useEffect } from "react";
+import Link from "next/link";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(null);
@@ -27,11 +28,14 @@ export default function Navbar() {
           isLoading ? "hidden" : "grid"
         } z-10 grid-cols-2 px-8 py-6 lg:grid-cols-3 lg:px-16 max-w-[1400px] `}
       >
-        <div className="border-4 border-[#F2F2F4] rounded-xl w-10 px-6 flex justify-center items-center">
+        <Link
+          href="/"
+          className="border-4 border-[#F2F2F4] rounded-xl w-10 px-6 flex justify-center items-center"
+        >
           <h1 className="text-[30px] font-bold text-[#F2F2F4] tracking-tighter">
             Ke
           </h1>
-        </div>
+        </Link>
         <div className="hidden lg:flex justify-center items-center gap-x-20 text-lg text-[#F2F2F4]">
           <a href="#aboutMe">About</a>
           <a href="#skills">Skills</a>
