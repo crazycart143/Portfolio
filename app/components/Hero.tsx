@@ -7,7 +7,7 @@ import Link from "next/link";
 export default function Hero() {
   return (
     <>
-      <div className="flex w-full max-w-[1400px] flex-col h-full top-0 lg:top-[140px]  lg:absolute justify-start items-center text-center lg:justify-start lg:items-start z-10 text-[#F2F2F4] px-[50px] lg:px-[100px] xl:px-[150px] py-[120px] lg:py-[50px]">
+      <div className="flex w-full max-w-[1400px] flex-col h-full top-0 lg:top-[140px]  lg:absolute justify-start items-center text-center lg:justify-start lg:items-start z-10 text-[#F2F2F4] px-[50px] lg:px-[100px] xl:px-[150px] xs:py-[80px] sm:py-[120px] lg:py-[50px]">
         <motion.p
           variants={fadeIn("right", "tween", 0.5, 1)}
           initial="hidden"
@@ -66,7 +66,7 @@ export default function Hero() {
         variants={fadeIn("down", "tween", 2, 1)}
         initial="hidden"
         whileInView="show"
-        viewport={{ once: "false", amount: 0.25 }}
+        viewport={{ once: "true", amount: 0.25 }}
         className="absolute bottom-[80px] text-white left-[48%] md:left-[50%] -ml-[50px] font-bold text-xl"
       >
         Scroll Down
@@ -76,7 +76,7 @@ export default function Hero() {
         variants={fadeIn("right", "tween", 2, 1)}
         initial="hidden"
         whileInView="show"
-        viewport={{ once: "false", amount: 0.25 }}
+        viewport={{ once: "true", amount: 0.25 }}
         className="rounded-full w-12 h-32 border-2 border-white absolute flex justify-center items-center -bottom-[60px] left-[44%] md:left-[48%] lg:left-[48.5%] xl:left-auto"
       >
         <motion.div

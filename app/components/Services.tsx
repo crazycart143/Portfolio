@@ -2,8 +2,8 @@ import React from "react";
 
 export default function Services() {
   return (
-    <section className="text-white flex flex-col justify-center items-center px-[50px] lg:px-[70px] xl:px-[120px] pb-14 max-w-[1400px]">
-      <h1 className="mt-[50px] text-[40px] font-bold tracking-wider">
+    <section className="text-white flex flex-col justify-center items-center xs:px-8 sm:px-16 lg:px-[70px] xl:px-[120px] pb-14 max-w-[1400px]">
+      <h1 className="mt-[50px] xs:text-[30px] sm:text-[40px] font-bold tracking-wider">
         What I do?
       </h1>
       <div className="flex flex-col flex-wrap h-full w-full justify-start items-start gap-y-20 mt-[50px] ">
@@ -25,7 +25,9 @@ export default function Services() {
                   d="M110 45v5h10V40h-10v5zM130 45v5h10V40h-10v5zM150 45v5h10V40h-10v5zM104.1 82.7c-.6 2.1-4.9 19.3-9.6 38.3-4.7 19-8.8 35.2-9.1 36.1-.3 1.3.7 1.9 4.2 2.8 2.6.7 4.9 1 5.1.7.4-.3 19.1-73.6 20.3-79.2 0-.2-8.7-2.4-9.4-2.4-.3 0-1 1.7-1.5 3.7zM54 108.5 42.5 120l11.8 11.7L66 143.5l3.7-3.8 3.8-3.7-8-8-8-8 7.8-7.8c4.2-4.2 7.7-8.2 7.7-8.8 0-1.3-5.3-6.4-6.6-6.4-.5 0-6.1 5.2-12.4 11.5zM129.7 99.8c-1.5 1.5-2.7 3.2-2.7 3.7s3.5 4.5 7.7 8.7l7.8 7.8-7.8 7.8c-4.2 4.2-7.7 8.2-7.7 8.7 0 1.3 5.2 6.5 6.5 6.5.5 0 6.2-5.2 12.5-11.5l11.5-11.5-11.5-11.5c-6.3-6.3-12-11.5-12.5-11.5-.6 0-2.3 1.3-3.8 2.8z"
                 />
               </svg>
-              <h2 className="font-bold mt-[8px]"> Front End Development</h2>
+              <h2 className="font-bold xs:mt-0 sm:mt-[8px]">
+                Front End Development
+              </h2>
             </div>
             <p className="mt-[24px]">
               Turning web designs and mockups into interactive and responsive
@@ -56,7 +58,10 @@ export default function Services() {
                 alt="web-development logo"
                 className="w-10 mb-[20px]"
               />
-              <h2 className="font-bold mt-[8px]"> Back End Development</h2>
+              <h2 className="font-bold xs:mt-0 sm:mt-[8px] ">
+                {" "}
+                Back End Development
+              </h2>
             </div>
             <p className="mt-[24px]">
               Creating and setup back end API endpoints, routes, and database

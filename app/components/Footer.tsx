@@ -7,21 +7,9 @@ import { useState, useEffect } from "react";
 
 export default function Footer() {
   const [isHovered, setIsHovered] = useState(false);
-  const [isLoading, setIsLoading] = useState(true);
-
-  useEffect(() => {
-    // Simulate loading time
-    setTimeout(() => {
-      setIsLoading(false);
-    }, 4000);
-  }, []);
 
   return (
-    <div
-      className={`${
-        isLoading ? "hidden" : "flex"
-      } h-full lg:h-[500px] bg-black flex-col gap-y-6 justify-start items-center pt-[100px] text-white px-5 pb-10`}
-    >
+    <div className="flex h-full lg:h-[500px] bg-black flex-col gap-y-6 justify-start items-center pt-[100px] text-white px-5 pb-10">
       <div className="flex items-center justify-center">
         <Image
           width={56}

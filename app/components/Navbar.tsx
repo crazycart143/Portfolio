@@ -8,14 +8,6 @@ import Link from "next/link";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(null);
-  const [isLoading, setIsLoading] = useState(true);
-
-  useEffect(() => {
-    // Simulate loading time
-    setTimeout(() => {
-      setIsLoading(false);
-    }, 4000);
-  }, []);
 
   return (
     <div className="lg:flex lg:w-full lg:items-center lg:justify-center">
@@ -24,9 +16,7 @@ export default function Navbar() {
         initial="hidden"
         whileInView="show"
         viewport={{ once: "true", amount: 0.25 }}
-        className={`${
-          isLoading ? "hidden" : "grid"
-        } z-10 grid-cols-2 px-8 py-6 lg:grid-cols-3 lg:px-16 max-w-[1400px] `}
+        className="grid z-10 grid-cols-2 px-8 py-6 lg:grid-cols-3 lg:px-16 max-w-[1400px] "
       >
         <Link
           href="/"
@@ -70,13 +60,13 @@ export default function Navbar() {
                 </h1>
               </div>
             </div>
-            <a
+            <Link
               className="py-[10px] text-[18px] pl-[50px] hover:bg-slate-300"
               href="/"
               onClick={() => setIsOpen(!isOpen)}
             >
               Home
-            </a>
+            </Link>
             <a
               className="py-[10px] hover:bg-slate-300 text-[18px] pl-[50px]"
               href="#skills"

@@ -11,9 +11,7 @@ export default function Page() {
           <h1 className="font-bold text-[30px]">Welcome to my projects!</h1>
           <p className="font-normal text-[16px]">
             These outputs are my pride and testament to my dedication and
-            expertise as a web developer. Each project represents the
-            culmination of countless hours of hard work, attention to detail,
-            and a relentless pursuit of excellence.
+            expertise as a web developer.
           </p>
           <p className="mt-2">Feel free to check them out!</p>
         </div>

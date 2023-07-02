@@ -8,7 +8,7 @@ export default function AboutMe() {
       initial="hidden"
       whileInView="show"
       viewport={{ once: "true", amount: 0.25 }}
-      className="flex flex-col items-center justify-center px-16 pt-32 lg:flex-row lg:pt-20 lg:flex lg:px-28 xl:pt-32 max-w-[1400px]"
+      className="flex flex-col items-center justify-center xs:px-8 sm:px-16 pt-32 lg:flex-row lg:pt-20 lg:flex lg:px-28 xl:pt-32 max-w-[1400px] xs:pb-6 sm:pb-0"
     >
       <img
         src="/about_me.png"
