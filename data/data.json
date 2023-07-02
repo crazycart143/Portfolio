@@ -4,20 +4,20 @@
     "description": "My Personal Portfolio",
     "technologies": ["NextJS", "ReactJS", "Framer Motion", "Tailwind"],
     "image": "/project1.png",
-    "src": "https://keanujohnlariosa.vercel.app"
+    "src": "https://github.com/crazycart143/Portfolio"
   },
   {
     "title": "Prompt.IT",
     "description": "Create and Share Creative Prompts",
     "technologies": ["NextJS", "ReactJS", "Next-Auth", "Tailwind", "MongoDB"],
     "image": "/project2.png",
-    "src": "https://prompit.vercel.app"
+    "src": "https://github.com/crazycart143/Prompt.IT"
   },
   {
     "title": "Carhub",
     "description": "Find, book or rent a car — quickly and easily!",
     "technologies": ["NextJS", "ReactJS", "TailwindCSS"],
     "image": "/project3.png",
-    "src": "https://ke-carhub.vercel.app"
+    "src": "https://github.com/crazycart143/CarHub"
   }
 ]
