@@ -22,7 +22,7 @@ export default function Home() {
       </section>
       <section
         id="aboutMe"
-        className="flex justify-center items-start w-full xs:h-full sm:h-[1000px] lg:h-[800px] bg-[#F2F2F4]"
+        className="flex justify-center items-start w-full xs:h-full lg:h-[800px] bg-[#F2F2F4]"
       >
         <AboutMe />
       </section>

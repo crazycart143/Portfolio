@@ -44,7 +44,7 @@ export default function Projects() {
           <p>You can view all of my projects by clicking the button below.</p>
           <Link
             href="/projects"
-            className="flex items-center justify-center w-full px-6 py-4 font-bold text-black bg-white border-2 border-black md:py-2"
+            className="flex items-center justify-center w-full px-6 py-4 font-bold text-black bg-white border-2 border-black md:py-2 md:text-[14px]"
           >
             VIEW MY PROJECTS
           </Link>

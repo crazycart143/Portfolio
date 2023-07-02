@@ -33,9 +33,12 @@ export default function Navbar() {
           <a href="#contact">Contact</a>
         </div>
         <div className="hidden lg:flex justify-end items-center text-[#4c4c4d]">
-          <button className="py-2 px-6 bg-[#F2F2F4] text-black rounded-lg font-bold">
+          <Link
+            href="https://github.com/crazycart143"
+            className="py-2 px-6 bg-[#F2F2F4] text-black rounded-lg font-bold"
+          >
             Github
-          </button>
+          </Link>
         </div>
         <div className="flex items-center justify-end">
           <HamburgerMenu setIsOpen={setIsOpen} isOpen={isOpen} />
