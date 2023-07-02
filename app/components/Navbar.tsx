@@ -91,6 +91,12 @@ export default function Navbar() {
             >
               Contact
             </a>
+            <Link
+              href="https://github.com/crazycart143"
+              className="py-[10px] hover:bg-slate-300 text-[18px] pl-[50px]"
+            >
+              Github
+            </Link>
           </div>
         </motion.div>
       </motion.nav>
